@@ -48,4 +48,18 @@ async def text(bot, update):
               ])
             )
             return
+           else:
+            await update.reply_text(Translation.START_TEXT.format(update.from_user.first_name),
+        reply_markup=InlineKeyboardMarkup(
+            [
+               
+                [
+                    InlineKeyboardButton('Source ', url='https://github.com/DevelopedBots/FileRenameBot')
+                  
+                ]
+            ]
+        ),
+        reply_to_message_id=update.message_id
+    )
+            return 
      
