@@ -48,20 +48,4 @@ async def text(bot, update):
               ])
             )
             return
-        else:
-            await update.reply_text(Translation.START_TEXT.format(update.from_user.first_name),
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton('Channel 🔔', url='https://t.me/DevelopedBots'),
-                    InlineKeyboardButton('Support 📢', url='https://t.me/DevelopedBotz')
-                ],
-                [
-                    InlineKeyboardButton('Source 🖥', url='https://github.com/DevelopedBots/FileRenameBot'),
-                    InlineKeyboardButton('Donate 💸', url='https://www.paypal.me/kunaldiwan1')
-                ]
-            ]
-        ),
-        reply_to_message_id=update.message_id
-    )
-            return 
+     
